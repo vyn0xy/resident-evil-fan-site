@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Apply saved UI before the first visible frame, including slow loads. -->
+  <script>document.documentElement.dataset.uiReady = 'false';</script>
+  <style>html[data-ui-ready="false"] body { visibility: hidden; }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resident Evil Series</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="site.css">
+  <script defer blocking="render" src="script.js"></script>
+  <script defer blocking="render" src="lang.js"></script>
+  <script defer blocking="render" src="site-shell.js"></script>
+  <script defer blocking="render" src="transition.js"></script>
+  <script defer blocking="render" src="ui-ready.js"></script>
+</head>
+<body>
+
+<header>
+  <nav aria-label="Main navigation">
+    <h1><a href="index.html" class="site-brand">Resident Evil</a></h1>
+    <ul>
+      <li><a href="index.html" data-translate="nav-home">Home</a></li>
+      <li><a href="games.html" data-translate="nav-games">Games</a></li>
+      <li><a href="characters.html" data-translate="nav-characters">Characters</a></li>
+      <li><a href="top-games.html" data-translate="nav-top">Top games</a></li>
+      <li class="user-profile"><a href="register.html" class="profile-link"><span class="user-icon" aria-hidden="true">◉</span><span class="user-name">Choose a nickname</span></a></li>
+      <li class="lang-switcher"><button type="button" onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button><span aria-hidden="true">|</span><button type="button" onclick="setLang('ru')" class="lang-btn" id="btn-ru">RU</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h2 data-translate="hero-title">Resident Evil</h2>
+      <p data-translate="hero-subtitle">Survival horror game series by Capcom</p>
+    </div>
+  </section>
+
+  <section class="cards">
+    <article class="card">
+      <img src="assets/images/home/re(main).jpg" alt="Top RE Games">
+      <div class="card-content">
+        <h3 data-translate="card-topgames-title">Top RE Games</h3>
+        <p data-translate="card-topgames-desc">Discover the best Resident Evil games ranked by fans!</p>
+        <a href="top-games.html" class="card-btn" data-translate="card-topgames-btn">View Rankings</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/images/home/characters(main).jpg" alt="Characters">
+      <div class="card-content">
+        <h3 data-translate="card-characters-title">Iconic Characters</h3>
+        <p data-translate="card-characters-desc">Leon Kennedy, Ada Wong, Chris Redfield and more.</p>
+        <a href="characters.html" class="card-btn" data-translate="card-characters-btn">View Characters</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <img src="assets/images/home/storyline(main).jpg" alt="Storyline">
+      <div class="card-content">
+        <h3 data-translate="card-story-title">Storyline</h3>
+        <p data-translate="card-story-desc">Deep storylines connected across multiple games.</p>
+        <a href="games.html" class="card-btn" data-translate="card-story-btn">Read Story</a>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p data-translate="footer-text">© 2026 Resident Evil Fan Website</p>
+</footer>
+
+
+
+
+</body>
+</html>

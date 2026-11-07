@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Apply saved UI before the first visible frame, including slow loads. -->
+  <script>document.documentElement.dataset.uiReady = 'false';</script>
+  <style>html[data-ui-ready="false"] body { visibility: hidden; }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resident Evil Characters</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="characters.css">
+  <link rel="stylesheet" href="site.css">
+  <script defer blocking="render" src="script.js"></script>
+  <script defer blocking="render" src="lang.js"></script>
+  <script defer blocking="render" src="site-shell.js"></script>
+  <script defer blocking="render" src="characters-l10n.js"></script>
+  <script defer blocking="render" src="characters.js"></script>
+  <script defer blocking="render" src="transition.js"></script>
+  <script defer blocking="render" src="ui-ready.js"></script>
+</head>
+<body>
+
+<header>
+  <nav aria-label="Main navigation">
+    <h1><a href="index.html" class="site-brand">Resident Evil</a></h1>
+    <ul>
+      <li><a href="index.html" data-translate="nav-home">Home</a></li>
+      <li><a href="games.html" data-translate="nav-games">Games</a></li>
+      <li><a href="characters.html" data-translate="nav-characters">Characters</a></li>
+      <li><a href="top-games.html" data-translate="nav-top">Top games</a></li>
+      <li class="user-profile"><a href="register.html" class="profile-link"><span class="user-icon" aria-hidden="true">◉</span><span class="user-name">Choose a nickname</span></a></li>
+      <li class="lang-switcher"><button type="button" onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button><span aria-hidden="true">|</span><button type="button" onclick="setLang('ru')" class="lang-btn" id="btn-ru">RU</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<div class="page-toolbar"><a href="index.html" class="page-back" data-page-back data-site-copy="back">← Back</a><a href="index.html" class="page-home" data-site-copy="home">Home</a></div>
+  <section class="page-intro">
+    <h2 data-translate="characters-title">Main Characters</h2>
+    <p data-translate="characters-subtitle">Explore the iconic heroes and villains</p>
+  </section>
+
+  <!-- RE0 -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil 0 (2002)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-0-2002-rebecca-chambers" data-character-name="Rebecca Chambers">
+        <img src="assets/images/characters/gallery/rebecca.jpg" alt="Rebecca Chambers">
+        <div class="card-content">
+          <h3>Rebecca Chambers</h3>
+          <p>The youngest S.T.A.R.S. Bravo Team member and skilled medic, forced to team up with a convicted criminal to survive the Umbrella Training Facility.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-0-2002-billy-coen" data-character-name="Billy Coen">
+        <img src="assets/images/characters/gallery/billy.jpg" alt="Billy Coen">
+        <div class="card-content">
+          <h3>Billy Coen</h3>
+          <p>A former Marine wrongfully convicted of murder, who escapes his transport and teams up with Rebecca to survive the Arklay Mountains outbreak.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE1 -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil 1 (1996)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-1-1996-chris-redfield" data-character-name="Chris Redfield">
+        <img src="assets/images/characters/gallery/chrisRE1.jpg" alt="Chris Redfield">
+        <div class="card-content">
+          <h3>Chris Redfield</h3>
+          <p>S.T.A.R.S. Alpha Team member investigating the Spencer Mansion.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-1-1996-jill-valentine" data-character-name="Jill Valentine">
+        <img src="assets/images/characters/gallery/jillRE1.jpg" alt="Jill Valentine">
+        <div class="card-content">
+          <h3>Jill Valentine</h3>
+          <p>S.T.A.R.S. Alpha Team member and master of unlocking.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-1-1996-barry-burton" data-character-name="Barry Burton">
+        <img src="assets/images/characters/gallery/barry.jpg" alt="Barry Burton">
+        <div class="card-content">
+          <h3>Barry Burton</h3>
+          <p>A reliable S.T.A.R.S. member and weapons expert.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-1-1996-albert-wesker" data-character-name="Albert Wesker">
+        <img src="assets/images/characters/gallery/albertRE1.jpg" alt="Albert Wesker">
+        <div class="card-content">
+          <h3>Albert Wesker</h3>
+          <p>S.T.A.R.S. Alpha Team captain hiding a dark secret.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE2 -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil 2 (1998)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-2-1998-leon-s-kennedy" data-character-name="Leon S. Kennedy">
+        <img src="assets/images/characters/gallery/leonRE2.jpg" alt="Leon S. Kennedy">
+        <div class="card-content">
+          <h3>Leon S. Kennedy</h3>
+          <p>A rookie RPD officer surviving his first day on the job.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-2-1998-claire-redfield" data-character-name="Claire Redfield">
+        <img src="assets/images/characters/gallery/claire.jpg" alt="Claire Redfield">
+        <div class="card-content">
+          <h3>Claire Redfield</h3>
+          <p>Searching for her brother Chris in zombie-infested Raccoon City.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-2-1998-ada-wong" data-character-name="Ada Wong">
+        <img src="assets/images/characters/gallery/adaRE2.jpg" alt="Ada Wong">
+        <div class="card-content">
+          <h3>Ada Wong</h3>
+          <p>A mysterious spy helping Leon while pursuing her own agenda.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-2-1998-william-birkin" data-character-name="William Birkin">
+        <img src="assets/images/characters/gallery/birkin.jpg" alt="William Birkin">
+        <div class="card-content">
+          <h3>William Birkin</h3>
+          <p>An Umbrella scientist who injected himself with the G-virus.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-2-1998-mr-x-tyrant" data-character-name="Mr. X (Tyrant)">
+        <img src="assets/images/characters/gallery/mrx.jpg" alt="Mr. X">
+        <div class="card-content">
+          <h3>Mr. X (Tyrant)</h3>
+          <p>A relentless Tyrant deployed by Umbrella to retrieve the G-virus sample and eliminate all survivors in Raccoon City Police Department.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE3 -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil 3 (1999)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-3-1999-jill-valentine" data-character-name="Jill Valentine">
+        <img src="assets/images/characters/gallery/jill.jpg" alt="Jill Valentine">
+        <div class="card-content">
+          <h3>Jill Valentine</h3>
+          <p>A S.T.A.R.S. survivor trying to escape Raccoon City.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-3-1999-carlos-oliveira" data-character-name="Carlos Oliveira">
+        <img src="assets/images/characters/gallery/carlos.jpg" alt="Carlos Oliveira">
+        <div class="card-content">
+          <h3>Carlos Oliveira</h3>
+          <p>A mercenary who helps Jill escape from Raccoon City.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-3-1999-nemesis" data-character-name="Nemesis">
+        <img src="assets/images/characters/gallery/nemesis.jpg" alt="Nemesis">
+        <div class="card-content">
+          <h3>Nemesis</h3>
+          <p>A relentless bio-weapon programmed to eliminate S.T.A.R.S. members.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE4 -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil 4 (2005)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-4-2005-leon-s-kennedy" data-character-name="Leon S. Kennedy">
+        <img src="assets/images/characters/gallery/leon.jpg" alt="Leon S. Kennedy">
+        <div class="card-content">
+          <h3>Leon S. Kennedy</h3>
+          <p>A government agent rescuing the President's daughter in Spain.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-4-2005-ada-wong" data-character-name="Ada Wong">
+        <img src="assets/images/characters/gallery/ada.jpg" alt="Ada Wong">
+        <div class="card-content">
+          <h3>Ada Wong</h3>
+          <p>A spy working in the shadows with her own mission.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-4-2005-ashley-graham" data-character-name="Ashley Graham">
+        <img src="assets/images/characters/gallery/ashley.jpg" alt="Ashley Graham">
+        <div class="card-content">
+          <h3>Ashley Graham</h3>
+          <p>The US President's daughter kidnapped by a mysterious cult.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-4-2005-luis-serra" data-character-name="Luis Serra">
+        <img src="assets/images/characters/gallery/luis.jpg" alt="Luis Serra">
+        <div class="card-content">
+          <h3>Luis Serra</h3>
+          <p>A former Umbrella scientist seeking redemption.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-4-2005-jack-krauser" data-character-name="Jack Krauser">
+        <img src="assets/images/characters/gallery/jack.jpg" alt="Jack Krauser">
+        <div class="card-content">
+          <h3>Jack Krauser</h3>
+          <p>A soldier corrupted by power and betrayal.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-4-2005-albert-wesker" data-character-name="Albert Wesker">
+        <img src="assets/images/characters/gallery/albert.jpg" alt="Albert Wesker">
+        <div class="card-content">
+          <h3>Albert Wesker</h3>
+          <p>Operating from the shadows, Wesker manipulates Los Illuminados cult to obtain a Plaga sample for his own sinister experiments.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE5 -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil 5 (2009)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-5-2009-chris-redfield" data-character-name="Chris Redfield">
+        <img src="assets/images/characters/gallery/chrisRE5.jpg" alt="Chris Redfield">
+        <div class="card-content">
+          <h3>Chris Redfield</h3>
+          <p>A BSAA agent investigating bioterrorism in Africa.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-5-2009-sheva-alomar" data-character-name="Sheva Alomar">
+        <img src="assets/images/characters/gallery/sheva.jpg" alt="Sheva Alomar">
+        <div class="card-content">
+          <h3>Sheva Alomar</h3>
+          <p>A skilled BSAA agent and Chris Redfield's partner in Africa.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-5-2009-jill-valentine" data-character-name="Jill Valentine">
+        <img src="assets/images/characters/gallery/jillRE5.jpg" alt="Jill Valentine">
+        <div class="card-content">
+          <h3>Jill Valentine</h3>
+          <p>Presumed dead after a confrontation with Wesker, Jill was captured and used as a test subject for Uroboros virus, becoming a brainwashed weapon under Wesker's control.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-5-2009-albert-wesker" data-character-name="Albert Wesker">
+        <img src="assets/images/characters/gallery/albertRE5.jpg" alt="Albert Wesker">
+        <div class="card-content">
+          <h3>Albert Wesker</h3>
+          <p>The main antagonist seeking to reshape humanity with Uroboros.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE6 -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil 6 (2012)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-6-2012-leon-s-kennedy" data-character-name="Leon S. Kennedy">
+        <img src="assets/images/characters/gallery/leonRE6.jpg" alt="Leon S. Kennedy">
+        <div class="card-content">
+          <h3>Leon S. Kennedy</h3>
+          <p>A government agent tasked with stopping a bioterror attack on the US President.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-6-2012-helena-harper" data-character-name="Helena Harper">
+        <img src="assets/images/characters/gallery/helena.jpg" alt="Helena Harper">
+        <div class="card-content">
+          <h3>Helena Harper</h3>
+          <p>Leon's partner who carries a dark secret connected to the Tall Oaks bioterror attack.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-6-2012-chris-redfield" data-character-name="Chris Redfield">
+        <img src="assets/images/characters/gallery/chrisRE6.jpg" alt="Chris Redfield">
+        <div class="card-content">
+          <h3>Chris Redfield</h3>
+          <p>A BSAA captain haunted by memories of losing his squad to a bioterror attack in Edonia.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-6-2012-piers-nivans" data-character-name="Piers Nivans">
+        <img src="assets/images/characters/gallery/piers.jpg" alt="Piers Nivans">
+        <div class="card-content">
+          <h3>Piers Nivans</h3>
+          <p>Chris Redfield's loyal BSAA partner who sacrifices himself to save Chris from the C-virus.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-6-2012-jake-muller" data-character-name="Jake Muller">
+        <img src="assets/images/characters/gallery/jake.jpg" alt="Jake Muller">
+        <div class="card-content">
+          <h3>Jake Muller</h3>
+          <p>Albert Wesker's son whose blood holds the key to a vaccine against the C-virus.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-6-2012-sherry-birkin" data-character-name="Sherry Birkin">
+        <img src="assets/images/characters/gallery/sherry.jpg" alt="Sherry Birkin">
+        <div class="card-content">
+          <h3>Sherry Birkin</h3>
+          <p>William Birkin's daughter now working as a government agent, partnered with Jake Muller.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-6-2012-ada-wong" data-character-name="Ada Wong">
+        <img src="assets/images/characters/gallery/adaRE6.jpg" alt="Ada Wong">
+        <div class="card-content">
+          <h3>Ada Wong</h3>
+          <p>Framed by her doppelganger Carla Radames, Ada fights to clear her name and stop the C-virus.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE7 -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil 7 Biohazard (2017)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-7-biohazard-2017-ethan-winters" data-character-name="Ethan Winters">
+        <img src="assets/images/characters/gallery/ethanRE7.jpg" alt="Ethan Winters">
+        <div class="card-content">
+          <h3>Ethan Winters</h3>
+          <p>An ordinary man who travels to Louisiana to find his missing wife Mia, only to be trapped by the Baker family.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-7-biohazard-2017-mia-winters" data-character-name="Mia Winters">
+        <img src="assets/images/characters/gallery/miaRE7.jpg" alt="Mia Winters">
+        <div class="card-content">
+          <h3>Mia Winters</h3>
+          <p>Ethan's wife found alive after three years, hiding a dark secret connected to Eveline.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-7-biohazard-2017-jack-baker" data-character-name="Jack Baker">
+        <img src="assets/images/characters/gallery/jack_baker.jpg" alt="Jack Baker">
+        <div class="card-content">
+          <h3>Jack Baker</h3>
+          <p>The infected patriarch of the Baker family, transformed into a near-immortal monster by Eveline.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-7-biohazard-2017-marguerite-baker" data-character-name="Marguerite Baker">
+        <img src="assets/images/characters/gallery/marguerite.jpg" alt="Marguerite Baker">
+        <div class="card-content">
+          <h3>Marguerite Baker</h3>
+          <p>Jack's infected wife who controls swarms of insects and mutated plants throughout the Baker estate.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-7-biohazard-2017-lucas-baker" data-character-name="Lucas Baker">
+        <img src="assets/images/characters/gallery/lucas.jpg" alt="Lucas Baker">
+        <div class="card-content">
+          <h3>Lucas Baker</h3>
+          <p>Jack's sadistic son who sets deadly traps for Ethan, secretly working with a mysterious organization.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-7-biohazard-2017-zoe-baker" data-character-name="Zoe Baker">
+        <img src="assets/images/characters/gallery/zoe.jpg" alt="Zoe Baker">
+        <div class="card-content">
+          <h3>Zoe Baker</h3>
+          <p>Jack's daughter who resists Eveline's control and secretly guides Ethan to escape the Baker estate.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-7-biohazard-2017-eveline" data-character-name="Eveline">
+        <img src="assets/images/characters/gallery/eveline.jpg" alt="Eveline">
+        <div class="card-content">
+          <h3>Eveline</h3>
+          <p>A dangerous bio-weapon disguised as a little girl, capable of mind control and infecting entire families.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-7-biohazard-2017-chris-redfield" data-character-name="Chris Redfield">
+        <img src="assets/images/characters/gallery/chrisRE7.jpg" alt="Chris Redfield">
+        <div class="card-content">
+          <h3>Chris Redfield</h3>
+          <p>A mysterious soldier who arrives at the Baker estate to rescue Mia and neutralize the Eveline threat.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE8 Village -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil Village (2021)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-ethan-winters" data-character-name="Ethan Winters">
+        <img src="assets/images/characters/gallery/ethan.jpg" alt="Ethan Winters">
+        <div class="card-content">
+          <h3>Ethan Winters</h3>
+          <p>A father fighting through a mysterious European village to save his kidnapped daughter Rose from the Four Lords.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-mia-winters" data-character-name="Mia Winters">
+        <img src="assets/images/characters/gallery/mia.jpg" alt="Mia Winters">
+        <div class="card-content">
+          <h3>Mia Winters</h3>
+          <p>Ethan's wife whose fate takes a dark turn when Mother Miranda infiltrates the Winters household.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-chris-redfield" data-character-name="Chris Redfield">
+        <img src="assets/images/characters/gallery/chris.jpg" alt="Chris Redfield">
+        <div class="card-content">
+          <h3>Chris Redfield</h3>
+          <p>A seasoned BSAA operative who has been tracking Mother Miranda and her connections to the Mold bioweapon.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-rose-winters" data-character-name="Rose Winters">
+        <img src="assets/images/characters/gallery/rose.jpg" alt="Rose Winters">
+        <div class="card-content">
+          <h3>Rose Winters</h3>
+          <p>Ethan's infant daughter kidnapped by Mother Miranda and separated into four flasks across the village.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-mother-miranda" data-character-name="Mother Miranda">
+        <img src="assets/images/characters/gallery/miranda.jpg" alt="Mother Miranda">
+        <div class="card-content">
+          <h3>Mother Miranda</h3>
+          <p>The cult leader and main antagonist who rules the village, seeking to resurrect her dead daughter Eva using Rose.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-lady-dimitrescu" data-character-name="Lady Dimitrescu">
+        <img src="assets/images/characters/gallery/lady.jpg" alt="Alcina Dimitrescu">
+        <div class="card-content">
+          <h3>Lady Dimitrescu</h3>
+          <p>A 9-foot tall vampire countess ruling Castle Dimitrescu with her three daughters, loyal to Mother Miranda.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-karl-heisenberg" data-character-name="Karl Heisenberg">
+        <img src="assets/images/characters/gallery/karl.jpg" alt="Karl Heisenberg">
+        <div class="card-content">
+          <h3>Karl Heisenberg</h3>
+          <p>A lord with magnetic powers who controls metal and machinery, secretly plotting against Mother Miranda.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-donna-beneviento" data-character-name="Donna Beneviento">
+        <img src="assets/images/characters/gallery/donna.jpg" alt="Donna Beneviento">
+        <div class="card-content">
+          <h3>Donna Beneviento</h3>
+          <p>A reclusive lord who uses her doll Angie and hallucinogenic flowers to torment her victims in House Beneviento.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-village-2021-salvatore-moreau" data-character-name="Salvatore Moreau">
+        <img src="assets/images/characters/gallery/moreau.jpg" alt="Salvatore Moreau">
+        <div class="card-content">
+          <h3>Salvatore Moreau</h3>
+          <p>A grotesque fish-like lord who controls the reservoir, desperately seeking Mother Miranda's approval.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+  <!-- RE Requiem -->
+  <div class="game-era">
+    <h3 class="era-title">☣ Resident Evil Requiem (2026)</h3>
+    <section class="cards">
+
+      <article class="card character-card" data-character-id="resident-evil-requiem-2026-grace-ashcroft" data-character-name="Grace Ashcroft">
+        <img src="assets/images/characters/gallery/grace.jpg" alt="Grace Ashcroft">
+        <div class="card-content">
+          <h3>Grace Ashcroft</h3>
+          <p>An FBI analyst investigating mysterious deaths at the Wrenwood Hotel, where her mother Alyssa was murdered eight years ago.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-requiem-2026-leon-s-kennedy" data-character-name="Leon S. Kennedy">
+        <img src="assets/images/characters/gallery/leonRE9.jpg" alt="Leon S. Kennedy">
+        <div class="card-content">
+          <h3>Leon S. Kennedy</h3>
+          <p>A veteran DSO agent returning to the ruins of Raccoon City, older and wearier but still fighting bioterrorism 28 years later.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-requiem-2026-dr-viktor-gideon" data-character-name="Dr. Viktor Gideon">
+        <img src="assets/images/characters/gallery/gideon.jpg" alt="Dr. Viktor Gideon">
+        <div class="card-content">
+          <h3>Dr. Viktor Gideon</h3>
+          <p>The main antagonist of Requiem, a virologist with ties to Umbrella Corporation secretly developing a dangerous new virus codenamed Elpis.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-requiem-2026-alyssa-ashcroft" data-character-name="Alyssa Ashcroft">
+        <img src="assets/images/characters/gallery/alyssa.jpg" alt="Alyssa Ashcroft">
+        <div class="card-content">
+          <h3>Alyssa Ashcroft</h3>
+          <p>Grace's mother and a journalist who survived Raccoon City. Murdered at the Wrenwood Hotel after uncovering Gideon's secret experiments.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-requiem-2026-sherry-birkin" data-character-name="Sherry Birkin">
+        <img src="assets/images/characters/gallery/sherryRE9.jpg" alt="Sherry Birkin">
+        <div class="card-content">
+          <h3>Sherry Birkin</h3>
+          <p>William Birkin's daughter, now a government agent serving as Leon's sidekick during the Raccoon City investigation in Requiem.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-requiem-2026-zeno" data-character-name="Zeno">
+        <img src="assets/images/characters/gallery/zeno.jpg" alt="Zeno">
+        <div class="card-content">
+          <h3>Zeno</h3>
+          <p>A mysterious and dangerous figure connected to Gideon's experiments who summons Mr. X to eliminate Leon throughout Requiem.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-requiem-2026-hunk" data-character-name="HUNK">
+        <img src="assets/images/characters/gallery/hunkRE9.jpg" alt="HUNK">
+        <div class="card-content">
+          <h3>HUNK</h3>
+          <p>The legendary Umbrella mercenary known as "Mr. Death" who returns in Requiem, confronting Leon in a late-game melee encounter inside Raccoon City.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+      <article class="card character-card" data-character-id="resident-evil-requiem-2026-mr-x-super-tyrant" data-character-name="Mr. X (Super Tyrant)">
+        <img src="assets/images/characters/gallery/mrx.jpg" alt="Mr. X Tyrant">
+        <div class="card-content">
+          <h3>Mr. X (Super Tyrant)</h3>
+          <p>A mass-produced Tyrant variant summoned by Zeno to hunt Leon through the ruins of Raccoon City Police Department, 28 years after the original incident.</p>
+          <button type="button" class="card-btn">Open character card</button>
+        </div>
+      </article>
+
+    </section>
+  </div>
+
+</main>
+
+<footer>
+  <p data-translate="footer-text">© 2026 Resident Evil Fan Website</p>
+</footer>
+
+
+
+
+</body>
+</html>

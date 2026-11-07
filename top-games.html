@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Apply saved UI before the first visible frame, including slow loads. -->
+  <script>document.documentElement.dataset.uiReady = 'false';</script>
+  <style>html[data-ui-ready="false"] body { visibility: hidden; }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top RE Games - Resident Evil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="top-games.css">
+  <link rel="stylesheet" href="site.css">
+  <script defer blocking="render" src="script.js"></script>
+  <script defer blocking="render" src="lang.js"></script>
+  <script defer blocking="render" src="site-shell.js"></script>
+  <script defer blocking="render" src="top-game-data.js"></script>
+  <script defer blocking="render" src="top-games.js"></script>
+  <script defer blocking="render" src="transition.js"></script>
+  <script defer blocking="render" src="ui-ready.js"></script>
+</head>
+<body class="top-games-page">
+
+<header>
+  <nav aria-label="Main navigation">
+    <h1><a href="index.html" class="site-brand">Resident Evil</a></h1>
+    <ul>
+      <li><a href="index.html" data-translate="nav-home">Home</a></li>
+      <li><a href="games.html" data-translate="nav-games">Games</a></li>
+      <li><a href="characters.html" data-translate="nav-characters">Characters</a></li>
+      <li><a href="top-games.html" data-translate="nav-top">Top games</a></li>
+      <li class="user-profile"><a href="register.html" class="profile-link"><span class="user-icon" aria-hidden="true">◉</span><span class="user-name">Choose a nickname</span></a></li>
+      <li class="lang-switcher"><button type="button" onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button><span aria-hidden="true">|</span><button type="button" onclick="setLang('ru')" class="lang-btn" id="btn-ru">RU</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<div class="page-toolbar"><a href="index.html" class="page-back" data-page-back data-site-copy="back">← Back</a><a href="index.html" class="page-home" data-site-copy="home">Home</a></div>
+  <section class="page-intro">
+    <h2>🏆 Top Resident Evil Games</h2>
+    <p>Our editorial picks from the series — ratings are illustrative, not collected votes</p>
+  </section>
+
+  <section class="top-games-list">
+
+    <div class="top-game-item rank-1">
+      <div class="rank-number">🥇 1</div>
+      <div class="top-game-image">
+        <!-- Постер RE4 Remake. Для замены измените src ниже. -->
+        <img src="assets/images/games/top/re4-remake.jpg" alt="Resident Evil 4 Remake" width="736" height="414">
+      </div>
+      <div class="top-game-info">
+        <h3>Resident Evil 4 Remake</h3>
+        <p class="top-game-year">2023 · PlayStation 5 / Xbox Series X|S / PC</p>
+        <p>A masterpiece of survival horror reimagined for modern audiences. Perfect balance of action, horror and storytelling.</p>
+        <div class="top-game-stats">
+          <span class="top-game-rating">⭐ 4.9/5</span>
+          <span class="top-game-votes">👥 Fan Favorite</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-game-item rank-2">
+      <div class="rank-number">🥈 2</div>
+      <div class="top-game-image">
+        <!-- Постер RE2 Remake. Для замены измените src ниже. -->
+        <img src="assets/images/games/top/re2-remake.jpg" alt="Resident Evil 2 Remake" width="736" height="414">
+      </div>
+      <div class="top-game-info">
+        <h3>Resident Evil 2 Remake</h3>
+        <p class="top-game-year">2019 · PlayStation 4 / Xbox One / PC</p>
+        <p>A stunning remake that captures the terror of the original while adding modern gameplay mechanics and breathtaking visuals.</p>
+        <div class="top-game-stats">
+          <span class="top-game-rating">⭐ 4.8/5</span>
+          <span class="top-game-votes">👥 Critics Choice</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-game-item rank-3">
+      <div class="rank-number">🥉 3</div>
+      <div class="top-game-image">
+        <!-- Постер Village. Для замены измените src ниже. -->
+        <img src="assets/images/games/top/village.jpg" alt="Resident Evil Village" width="616" height="353">
+      </div>
+      <div class="top-game-info">
+        <h3>Resident Evil Village</h3>
+        <p class="top-game-year">2021 · PlayStation 5 / Xbox Series X|S / PC</p>
+        <p>A gothic horror masterpiece featuring unforgettable villains and an emotional story about a father's love.</p>
+        <div class="top-game-stats">
+          <span class="top-game-rating">⭐ 4.7/5</span>
+          <span class="top-game-votes">👥 Most Popular</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-game-item rank-4">
+      <div class="rank-number">4</div>
+      <div class="top-game-image">
+        <!-- Постер RE7. Для замены измените src ниже. -->
+        <img src="assets/images/games/top/re7.jpg" alt="Resident Evil 7 Biohazard" width="620" height="300">
+      </div>
+      <div class="top-game-info">
+        <h3>Resident Evil 7 Biohazard</h3>
+        <p class="top-game-year">2017 · PlayStation 4 / Xbox One / PC / VR</p>
+        <p>A bold reinvention of the series with first-person perspective that brought survival horror back to its roots.</p>
+        <div class="top-game-stats">
+          <span class="top-game-rating">⭐ 4.6/5</span>
+          <span class="top-game-votes">👥 Best Horror</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-game-item rank-5">
+      <div class="rank-number">5</div>
+      <div class="top-game-image">
+        <!-- Постер Requiem. Для замены измените src ниже. -->
+        <img src="assets/images/games/top/requiem.jpg" alt="Resident Evil Requiem" width="736" height="414">
+      </div>
+      <div class="top-game-info">
+        <h3>Resident Evil Requiem</h3>
+        <p class="top-game-year">2026 · PlayStation 5 / PC</p>
+        <p>The latest chapter in the saga brings Leon back to Raccoon City in an emotional and terrifying conclusion.</p>
+        <div class="top-game-stats">
+          <span class="top-game-rating">⭐ 4.9/5</span>
+          <span class="top-game-votes">👥 Best of 2026</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p data-translate="footer-text">© 2026 Resident Evil Fan Website</p>
+</footer>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Apply saved UI before the first visible frame, including slow loads. -->
+  <script>document.documentElement.dataset.uiReady = 'false';</script>
+  <style>html[data-ui-ready="false"] body { visibility: hidden; }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games - Resident Evil Series</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="mini-games.css">
+  <link rel="stylesheet" href="site.css">
+  <script defer blocking="render" src="script.js"></script>
+  <script defer blocking="render" src="lang.js"></script>
+  <script defer blocking="render" src="site-shell.js"></script>
+  <script defer blocking="render" src="transition.js"></script>
+  <script defer blocking="render" src="ui-ready.js"></script>
+</head>
+<body class="mini-games-page">
+
+<header>
+  <nav aria-label="Main navigation">
+    <h1><a href="index.html" class="site-brand">Resident Evil</a></h1>
+    <ul>
+      <li><a href="index.html" data-translate="nav-home">Home</a></li>
+      <li><a href="games.html" data-translate="nav-games">Games</a></li>
+      <li><a href="characters.html" data-translate="nav-characters">Characters</a></li>
+      <li><a href="top-games.html" data-translate="nav-top">Top games</a></li>
+      <li class="user-profile"><a href="register.html" class="profile-link"><span class="user-icon" aria-hidden="true">◉</span><span class="user-name">Choose a nickname</span></a></li>
+      <li class="lang-switcher"><button type="button" onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button><span aria-hidden="true">|</span><button type="button" onclick="setLang('ru')" class="lang-btn" id="btn-ru">RU</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="mini-games-main">
+<div class="page-toolbar"><a href="index.html" class="page-back" data-page-back data-site-copy="back">← Back</a><a href="index.html" class="page-home" data-site-copy="home">Home</a></div>
+  <section class="page-intro">
+    <h2 data-translate="mini-games-title">☣ Mini Games</h2>
+    <p data-translate="mini-games-subtitle">Choose your game and test your knowledge!</p>
+  </section>
+
+  <p class="game-note" data-translate="guest-note">Play as a guest. Your best scores stay in this browser.</p>
+  <h3 class="games-section-title" data-translate="games-ready">Three ways to investigate</h3>
+  <section class="mini-games-grid" aria-label="Playable challenges">
+    <article class="mini-game-card card-trivia">
+      <div class="mini-game-icon">01</div>
+      <div class="mini-game-info">
+        <h3 data-translate="game-trivia-title">RE Trivia</h3>
+        <p data-translate="game-trivia-desc">Test your knowledge about the Resident Evil lore!</p>
+        <div class="mini-game-meta">
+          <span class="mini-game-difficulty" data-translate="game-trivia-diff">⭐⭐ Medium</span>
+          <span class="mini-game-time" data-translate="game-trivia-time">40 questions</span>
+        </div>
+        <a href="trivia.html" class="play-btn" data-translate="play-btn">▶ PLAY</a>
+      </div>
+    </article>
+
+    <article class="mini-game-card card-guess">
+      <div class="mini-game-icon">02</div>
+      <div class="mini-game-info">
+        <h3 data-translate="game-guess-title">Guess The Character</h3>
+        <p data-translate="game-guess-desc">Can you recognize RE characters from blurred images?</p>
+        <div class="mini-game-meta">
+          <span class="mini-game-difficulty" data-translate="game-guess-diff">⭐⭐ Medium</span>
+          <span class="mini-game-time" data-translate="game-guess-time">⏱ 5 min</span>
+        </div>
+        <a href="guess.html" class="play-btn" data-translate="play-btn">▶ PLAY</a>
+      </div>
+    </article>
+
+    <article class="mini-game-card card-photo">
+      <div class="mini-game-icon">03</div>
+      <div class="mini-game-info">
+        <h3 data-translate="game-photo-title">Guess The Character</h3>
+        <p data-translate="game-photo-desc">Can you recognize RE characters from blurred images?</p>
+        <div class="mini-game-meta">
+          <span class="mini-game-difficulty" data-translate="game-photo-diff">⭐⭐ Medium</span>
+          <span class="mini-game-time" data-translate="game-photo-time">⏱ 5 min</span>
+        </div>
+        <a href="photo.html" class="play-btn" data-translate="play-btn">▶ PLAY</a>
+      </div>
+    </article>
+  </section>
+  <section class="games-later">
+    <h3 class="games-section-title" data-translate="games-later">More ways to survive</h3>
+    <p data-translate="games-later-note">Read the situation, make your choice and see how your story unfolds.</p>
+    <div class="mini-games-grid">
+    <article class="mini-game-card card-quiz is-ready">
+      <div class="mini-game-icon">🎭</div>
+      <div class="mini-game-info">
+        <h3 data-translate="game-quiz-title">Who Are You?</h3>
+        <p data-translate="game-quiz-desc">Find out which Resident Evil character you are!</p>
+        <div class="mini-game-meta">
+          <span class="mini-game-difficulty" data-translate="game-quiz-diff">⭐ Easy</span>
+          <span class="mini-game-time" data-translate="game-quiz-time">⏱ 5 min</span>
+        </div>
+        <a href="personality.html" class="play-btn" data-translate="extra-play">▶ Start test</a>
+      </div>
+    </article>
+
+    <article class="mini-game-card card-survival is-ready">
+      <div class="mini-game-icon">📖</div>
+      <div class="mini-game-info">
+        <h3 data-translate="game-survival-title">Survival Story</h3>
+        <p data-translate="game-survival-desc">Make choices and survive the zombie outbreak!</p>
+        <div class="mini-game-meta">
+          <span class="mini-game-difficulty" data-translate="game-survival-diff">⭐⭐⭐ Hard</span>
+          <span class="mini-game-time" data-translate="game-survival-time">⏱ 15 min</span>
+        </div>
+        <a href="survival-story.html" class="play-btn" data-translate="extra-play">▶ Start story</a>
+      </div>
+    </article>
+
+    <article class="mini-game-card card-memory is-ready">
+      <div class="mini-game-icon">🃏</div>
+      <div class="mini-game-info">
+        <h3 data-translate="game-memory-title">Memory Cards</h3>
+        <p data-translate="game-memory-desc">Find matching pairs before time runs out!</p>
+        <div class="mini-game-meta">
+          <span class="mini-game-difficulty" data-translate="game-memory-diff">⭐ Easy</span>
+          <span class="mini-game-time" data-translate="game-memory-time">⏱ 3 min</span>
+        </div>
+        <a href="memory.html" class="play-btn" data-translate="extra-play">▶ Play</a>
+      </div>
+    </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p data-translate="footer-text">© 2026 Resident Evil Fan Website</p>
+</footer>
+
+
+
+
+</body>
+</html>

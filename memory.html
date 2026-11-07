@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.dataset.uiReady = 'false';</script>
+  <style>html[data-ui-ready="false"] body { visibility: hidden; }</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidence Room - Resident Evil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mini-games.css">
+  <link rel="stylesheet" href="site.css">
+  <script defer blocking="render" src="script.js"></script>
+  <script defer blocking="render" src="lang.js"></script>
+  <script defer blocking="render" src="site-shell.js"></script>
+  <script defer blocking="render" src="game-data.js"></script>
+  <script defer blocking="render" src="character-photos.js"></script>
+  <script defer blocking="render" src="extra-games.js"></script>
+  <script defer blocking="render" src="transition.js"></script>
+  <script defer blocking="render" src="ui-ready.js"></script>
+</head>
+<body class="mini-games-page" data-extra-game="memory">
+<header><nav aria-label="Main navigation">
+  <h1><a href="index.html" class="site-brand">Resident Evil</a></h1>
+  <ul>
+    <li><a href="index.html" data-translate="nav-home">Home</a></li>
+    <li><a href="games.html" data-translate="nav-games">Games</a></li>
+    <li><a href="characters.html" data-translate="nav-characters">Characters</a></li>
+    <li><a href="top-games.html" data-translate="nav-top">Top games</a></li>
+    <li class="user-profile"><a href="register.html" class="profile-link"><span class="user-icon" aria-hidden="true">◉</span><span class="user-name">Choose a nickname</span></a></li>
+    <li class="lang-switcher"><button type="button" onclick="setLang('en')" class="lang-btn" id="btn-en">EN</button><span aria-hidden="true">|</span><button type="button" onclick="setLang('ru')" class="lang-btn" id="btn-ru">RU</button></li>
+  </ul>
+</nav></header>
+<main class="mini-games-main">
+  <div class="page-toolbar"><a href="games.html" class="page-back" data-page-back data-site-copy="back">← Back</a><a href="index.html" class="page-home" data-site-copy="home">Home</a></div>
+  <section class="page-intro"><h2 id="extra-page-title" data-translate="extra-memory-title">Umbrella: Evidence Room</h2><p data-translate="extra-memory-subtitle">Match character portraits before the trail goes cold.</p></section>
+  <section class="game-panel extra-game-panel" id="extra-game" aria-labelledby="extra-page-title"></section>
+</main>
+<footer><p data-translate="footer-text">© 2026 Resident Evil Fan Website</p></footer>
+</body>
+</html>
